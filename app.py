@@ -16,7 +16,7 @@ import matplotlib.pyplot as plt
 from torch.autograd import Variable
 from diffusers.utils import load_image
 from sklearn.neighbors import NearestNeighbors
-from diffusers import DiffusionPipeline as GANpipeline
+from diffusedddrs import DiffusionPipeline as GANpipeline
 from flask import Flask, request, jsonify
 from flask_cors import CORS, cross_origin
 
@@ -37,4 +37,4 @@ def predict():
     return jsonify({'image': f"result/{prompt}.png"})
 
 if __name__ == '__main__':
-    app.run(debug=false, host='0.0.0.0', port=5000)
+    app.run(debug=False, host='0.0.0.0', port=5000)
